@@ -1,0 +1,28 @@
+html{
+	font-size: 16px;
+}
+
+body{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 2.8rem;
+}
+
+.fortune-height{
+	height: 100vh;
+}
+
+.pink{
+	color: #d9a8b1;
+}
+
+.purple{
+	color: #a775a7;
+}
+
+.blue{
+	color: #65aded;
+}
+
+.green{
+	color: #6ca36c;
+}
