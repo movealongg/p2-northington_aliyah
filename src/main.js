@@ -18,7 +18,7 @@ function wrapper(){
 		for (let i = 0; i < thisColorLength * 2; i++){
 			setTimeout (function(){
 				changeColor();
-			}, i * 1000);
+			}, i * 600);
 		};
 	};
 	
