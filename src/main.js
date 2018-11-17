@@ -4,3 +4,4 @@ $(document).ready(function() {
 	});
 });
 
+const colors = document.querySelectorAll('.colorContainer > p');
