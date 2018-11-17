@@ -27,3 +27,12 @@ body{
 	color: #6ca36c;
 }
 
+.change{
+/*
+	color: white;
+	transition: all 0.1s;
+	background-color: #d9a8b1;
+*/
+	background-image: url(img/paper.png);
+	transition: all 0.5s ease-out;
+}
