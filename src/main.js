@@ -5,10 +5,11 @@ $(document).ready(function() {
 });
 
 const colors = document.querySelectorAll('.colorContainer > p');
+const colorBg = document.querySelector('.color');
 
 function wrapper(){
 	const changeColor = () => {
-		this.parentNode.classList.toggle('change');
+		colorBg.classList.toggle('change');
 		};
 	
 	const chooseColor = () => {

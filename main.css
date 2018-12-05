@@ -35,4 +35,14 @@ body{
 */
 	background-image: url(img/paper.png);
 	transition: all 0.5s ease-out;
+	background-size: cover;
+/*
+	width: 100%;
+	padding: 0;
+	content: url(img/paper.png);
+*/
+}
+
+.hide{
+	display: none;
 }
