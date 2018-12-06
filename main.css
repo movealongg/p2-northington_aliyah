@@ -31,7 +31,8 @@ body{
 .change{
 	background-image: url(img/paper.png);
 	transition: all 0.5s ease-out;
-	background-size: cover;
+	background-repeat: repeat;
+	background-size: contain;
 }
 
 .hide{
@@ -46,6 +47,7 @@ body{
 	background-image: url(img/bokeh.jpg);
 	transition: all 0.5s ease-out;
 	background-size: cover;
+	background-position: center;
 }
 
 .fortune-style{
