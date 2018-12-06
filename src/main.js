@@ -24,18 +24,73 @@ function wrapper(){
 			setTimeout (function(){
 				changeColor();
 			}, i * 600);
-		}
-			setTimeout(function(){
+		};
+			setTimeout (function(){
 				colorBg.classList.add('hide');
 				colorBg2.classList.remove('hide');
 				colorBg2.classList.add('show');
-				console.log('hi');
 			}, thisColorLength * 1000);
 	};
 	
 	chooseColor();
 };
 
+function wrapper2(){
+	const changeColor2 = () => {
+		colorBg2.classList.toggle('change');
+		};
+	
+	const chooseColor2 = () => {
+		let thisNumber = this.childNodes[0].nodeValue;
+		let thisNumberValue = Number(thisNumber);
+		
+		for (let i = 0; i < thisNumberValue * 2; i++){
+			setTimeout (function(){
+				changeColor2();
+			}, i * 600);
+		};
+			setTimeout (function(){
+				colorBg2.classList.add('hide');
+				colorBg2.classList.remove('show');
+				colorBg3.classList.remove('hide');
+				colorBg3.classList.add('show');
+			}, thisNumberValue * 1000);
+	};
+	
+	chooseColor2();
+};
+
+function wrapper3(){
+	const changeColor3 = () => {
+		colorBg3.classList.toggle('change');
+		};
+	
+	const chooseColor3 = () => {
+		let thisNumber = this.childNodes[0].nodeValue;
+		let thisNumberValue = Number(thisNumber);
+		
+		for (let i = 0; i < thisNumberValue * 2; i++){
+			setTimeout (function(){
+				changeColor3();
+			}, i * 600);
+		};
+			setTimeout (function(){
+				colorBg3.classList.add('hide');
+				colorBg3.classList.remove('show');
+			}, thisNumberValue * 1000);
+	};
+	
+	chooseColor3();
+};
+
 for(let i = 0; i < colors.length; i++){
 	colors[i].addEventListener('click', wrapper);
+};
+
+for(let i = 0; i < colors.length; i++){
+	colors2[i].addEventListener('click', wrapper2);
+};
+
+for(let i = 0; i < colors.length; i++){
+	colors3[i].addEventListener('click', wrapper3);
 };
