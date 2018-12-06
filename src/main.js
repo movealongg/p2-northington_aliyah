@@ -34,6 +34,7 @@ function randomFortune(){
 	fortunes.sort(function(a, b){return 0.5 - Math.random()});
 	let fortuneText = document.createTextNode(fortunes[0]);
 	fortuneResult.appendChild(fortuneText);
+	fortuneResult.classList.add('fortune-style');
 };
 
 function wrapper(){

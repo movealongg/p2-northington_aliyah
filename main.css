@@ -9,6 +9,7 @@ body{
 
 .fortune-height{
 	height: 100vh;
+	overflow: hidden;
 }
 
 .pink{
@@ -39,4 +40,16 @@ body{
 
 .show{
 	display: block;
+}
+
+.fortune-bg{
+	background-image: url(img/bokeh.jpg);
+	transition: all 0.5s ease-out;
+	background-size: cover;
+}
+
+.fortune-style{
+	font-family: 'Lobster Two', cursive;
+	transition: all 0.5s ease-in;
+	text-align: center;
 }
