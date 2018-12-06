@@ -8,8 +8,8 @@ const colorBg = document.querySelector('.color');
 const colorBg2 = document.querySelector('.color2');
 const colorBg3 = document.querySelector('.color3');
 const colors = document.querySelectorAll('.colorContainer > p');
-const colors2 = document.querySelectorAll('.colorContainer > p');
-const colors3 = document.querySelectorAll('.colorContainer > p');
+const colors2 = document.querySelectorAll('.colorContainer2 > p');
+const colors3 = document.querySelectorAll('.colorContainer3 > p');
 
 function wrapper(){
 	const changeColor = () => {
@@ -24,7 +24,13 @@ function wrapper(){
 			setTimeout (function(){
 				changeColor();
 			}, i * 600);
-		};
+		}
+			setTimeout(function(){
+				colorBg.classList.add('hide');
+				colorBg2.classList.remove('hide');
+				colorBg2.classList.add('show');
+				console.log('hi');
+			}, thisColorLength * 1000);
 	};
 	
 	chooseColor();

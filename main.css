@@ -33,3 +33,10 @@ body{
 	background-size: cover;
 }
 
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
