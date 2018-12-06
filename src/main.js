@@ -21,6 +21,11 @@ const fortunes = [
 	'Stay close to anything that makes you glad you are alive.',
 	'Never let the fear of striking out keep you from playing the game.'];
 
+function randomFortune(){
+	fortunes.sort(function(a, b){return 0.5 - Math.random()});
+	console.log(fortunes);
+};
+
 function wrapper(){
 	const changeColor = () => {
 		colorBg.classList.toggle('change');
@@ -91,6 +96,7 @@ function wrapper3(){
 	};
 	
 	chooseColor3();
+	randomFortune();
 };
 
 for(let i = 0; i < colors.length; i++){
