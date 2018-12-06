@@ -10,6 +10,16 @@ const colorBg3 = document.querySelector('.color3');
 const colors = document.querySelectorAll('.colorContainer > p');
 const colors2 = document.querySelectorAll('.colorContainer2 > p');
 const colors3 = document.querySelectorAll('.colorContainer3 > p');
+const fortunes = [
+	'Sometimes the most productive thing you can do is relax.',
+	'Self care is the main essential to manifesting anything in your life.',
+	'Live less out of habit and more out of intent.',
+	'If it doesn\'t make you feel fabulous: don\'t buy it, don\'t do it, don\'t keep it.',
+	'The best things in life just happen.',
+	'Strive for progress, not perfection.', 'Anything is possible if you have enough nerve.',
+	'Beauty begins the momemnt you decide to be yourself.',
+	'Stay close to anything that makes you glad you are alive.',
+	'Never let the fear of striking out keep you from playing the game.'];
 
 function wrapper(){
 	const changeColor = () => {
